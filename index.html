@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a passionate Software Engineer and Fresh Graduate. Explore projects, technical skills, education timeline, and contact information." />
+  <meta name="keywords" content="Software Engineer, Fresh Graduate Portfolio, Full Stack Developer, Web Development, Java, Python, JavaScript, React" />
+  <meta name="author" content="Sunil | Software Engineer" />
+  <title>Sunil | Software Engineer Portfolio</title>
+  
+  <!-- Google Fonts (Modern + Pixel Art Retro Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       HORIZONTAL NAVIGATION BAR (PIXEL ART STYLE - LEFT ALIGNED BRAND & LINKS)
+       ========================================================================= -->
+  <header id="site-navbar" class="pixel-horizontal-navbar" role="banner">
+    <div class="nav-container">
+      
+      <!-- Left: Brand Logo & Online Status -->
+      <div class="nav-left-brand">
+        <a href="#hero" class="brand-logo pixel-logo" aria-label="Sunil Portfolio Home">
+          <span class="pixel-bracket">&lt;</span><span class="pixel-brand-name">SUNIL</span><span class="pixel-slash">/</span><span class="pixel-bracket">&gt;</span>
+        </a>
+        <div class="nav-status-pill">
+          <span class="nav-status-dot"></span>
+          <span class="nav-status-text">ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Horizontal Navigation Links (8 Items: Home, About Me, Skills, Timeline, Projects, Testimonials, Chat, Contact) -->
+      <nav id="main-navigation" class="horizontal-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <a href="#hero" class="nav-menu-link active" data-nav="hero" aria-label="Navigate to Home">
+              <i class="fa-solid fa-house-chimney"></i> <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#about" class="nav-menu-link" data-nav="about" aria-label="Navigate to About Me">
+              <i class="fa-solid fa-user-ninja"></i> <span>About Me</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#skills" class="nav-menu-link" data-nav="skills" aria-label="Navigate to Skills">
+              <i class="fa-solid fa-code"></i> <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#timeline" class="nav-menu-link" data-nav="timeline" aria-label="Navigate to Timeline">
+              <i class="fa-solid fa-clock-rotate-left"></i> <span>Timeline</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#projects" class="nav-menu-link" data-nav="projects" aria-label="Navigate to Projects">
+              <i class="fa-solid fa-gamepad"></i> <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#testimonials" class="nav-menu-link" data-nav="testimonials" aria-label="Navigate to Testimonials">
+              <i class="fa-solid fa-comments"></i> <span>Testimonials</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#chat" class="nav-menu-link" data-nav="chat" aria-label="Navigate to Interactive Chat">
+              <i class="fa-solid fa-terminal"></i> <span>Chat</span>
+            </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#contact" class="nav-menu-link" data-nav="contact" aria-label="Navigate to Contact">
+              <i class="fa-solid fa-envelope"></i> <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Controls (Theme Toggle, Resume CV & Mobile Toggle) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn pixel-theme-btn" aria-label="Toggle Night/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="Sunil_E_Resume_with_Photo.pdf" class="btn-cv-pixel" download target="_blank" rel="noopener noreferrer" title="Download CV">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>CV</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="main-navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         SECTION 1: HERO SECTION (PIXEL ART STYLE + BACKGROUND IMAGE)
+         ======================================================================= -->
+    <section id="hero" class="hero-section pixel-hero">
+      <!-- CRT Scanline & Pixel Grid Overlay -->
+      <div class="pixel-scanlines"></div>
+      <div class="hero-bg-glow"></div>
+
+      <div class="container hero-container">
+        
+        <div class="hero-content pixel-hero-content">
+          <!-- Pixel Arcade Status Badge -->
+          <div class="pixel-status-badge">
+            <span class="pixel-blink-dot"></span>
+            <span class="pixel-badge-text">★ PLAYER 1 READY // OPEN FOR ROLES ★</span>
+          </div>
+
+          <!-- Welcoming Title with Tagline -->
+          <h1 class="hero-title pixel-hero-title">
+            <span class="pixel-subheading">WELCOME, VISITOR!</span>
+            <span class="pixel-main-title">HI, I'M <span class="pixel-neon-name">SUNIL</span></span>
+            <span class="hero-subtitle pixel-subtitle">
+              &gt; <span id="typewriter" class="typewriter-text">SOFTWARE ENGINEER</span><span class="pixel-cursor">█</span>
+            </span>
+          </h1>
+
+          <!-- Brief Tagline -->
+          <p class="hero-description pixel-tagline">
+            ⚡ Turning fresh engineering passion, modern web architectures, and algorithms into high-impact digital solutions.
+          </p>
+
+          <!-- Retro 8-bit Action Buttons -->
+          <div class="hero-buttons pixel-buttons">
+            <a href="#projects" class="btn pixel-btn pixel-btn-primary">
+              <i class="fa-solid fa-gamepad"></i> START GAME / PROJECTS
+            </a>
+            <a href="Sunil_E_Resume_with_Photo.pdf" class="btn pixel-btn pixel-btn-secondary" download target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-arrow-down"></i> GET RESUME
+            </a>
+            <a href="#contact" class="btn pixel-btn pixel-btn-outline">
+              <i class="fa-solid fa-envelope"></i> CONTACT
+            </a>
+          </div>
+
+          <!-- Quick Social Handles in Pixel Badges -->
+          <div class="hero-socials pixel-socials">
+            <span class="social-label pixel-social-label">CONNECT:</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon pixel-social-icon" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sunil-e-65388839" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon pixel-social-icon" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:sunile732k8@gmail.com" aria-label="Email Sunil" class="social-icon pixel-social-icon" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile" class="social-icon pixel-social-icon" title="LeetCode">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Retro 8-bit Player HUD / Character Profile Card -->
+        <div class="hero-visual">
+          <div class="pixel-hud-card">
+            <div class="hud-header">
+              <span class="hud-led led-green"></span>
+              <span class="hud-title">PLAYER_STATS.EXE</span>
+              <span class="hud-coins">🪙 9999</span>
+            </div>
+
+            <div class="hud-body">
+              <!-- Player Character Avatar Frame -->
+              <div class="hud-avatar-row">
+                <div class="hud-avatar-box">
+                  <img src="WhatsApp Image 2026-10-07 at 10.13.58 AM.jpeg" alt="Sunil Pixel Avatar" class="hud-avatar-img" />
+                </div>
+                <div class="hud-quick-info">
+                  <div class="hud-row-mini"><span class="hud-label">PLAYER:</span> <span class="hud-val hud-highlight">SUNIL</span></div>
+                  <div class="hud-row-mini"><span class="hud-label">CLASS:</span> <span class="hud-val">FULL-STACK DEV</span></div>
+                  <div class="hud-row-mini"><span class="hud-label">LVL:</span> <span class="hud-val">1 (FRESH ENG)</span></div>
+                </div>
+              </div>
+
+              <div class="hud-row">
+                <span class="hud-label">DEGREE:</span>
+                <span class="hud-val">B.E. COMPUTER SCIENCE</span>
+              </div>
+
+              <!-- Retro Stat Bars -->
+              <div class="hud-meter-group">
+                <div class="meter-label-row">
+                  <span>HP (ENERGY):</span>
+                  <span>100/100</span>
+                </div>
+                <div class="pixel-progress-bar"><div class="pixel-progress-fill fill-green" style="width: 100%;"></div></div>
+              </div>
+
+              <div class="hud-meter-group">
+                <div class="meter-label-row">
+                  <span>MP (LEARNING SPEED):</span>
+                  <span>99/100</span>
+                </div>
+                <div class="pixel-progress-bar"><div class="pixel-progress-fill fill-cyan" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="hud-tech-tags">
+                <span class="hud-tag">REACT</span>
+                <span class="hud-tag">NODE.JS</span>
+                <span class="hud-tag">PYTHON</span>
+                <span class="hud-tag">SQL</span>
+                <span class="hud-tag">DSA</span>
+              </div>
+            </div>
+
+            <div class="hud-footer">
+              <span class="hud-status-text">STATUS: READY TO DEPLOY</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2: ABOUT SECTION (CLEAN MINIMALISTIC & PIXEL ART BIO)
+         ======================================================================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;character-profile&gt;</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A glimpse into my engineering journey, technical background, and personal interests.</p>
+        </div>
+
+        <div class="about-container-grid">
+          
+          <!-- Left: Profile Portrait & Character Card -->
+          <div class="about-profile-wrapper">
+            <div class="pixel-avatar-card">
+              <div class="avatar-card-header">
+                <span class="avatar-led"></span>
+                <span class="avatar-title">SUNIL_E_PORTRAIT.RAW</span>
+                <span class="avatar-tag">VERIFIED</span>
+              </div>
+              
+              <div class="avatar-img-container">
+                <img 
+                  src="WhatsApp Image 2026-10-05 at 11.45.05 PM.jpeg" 
+                  alt="Sunil E. - Aspiring Software Developer" 
+                  class="pixel-portrait-img" 
+                />
+                <div class="avatar-floating-tag">
+                  <span>★ B.E. STUDENT @ AIT ★</span>
+                </div>
+              </div>
+
+              <div class="avatar-card-details">
+                <div class="avatar-detail-row">
+                  <span class="det-label">COLLEGE:</span>
+                  <span class="det-val">Adhichunchanagiri Inst. of Tech</span>
+                </div>
+                <div class="avatar-detail-row">
+                  <span class="det-label">ACADEMICS:</span>
+                  <span class="det-val det-accent">CGPA 7.8</span>
+                </div>
+                <div class="avatar-detail-row">
+                  <span class="det-label">FOCUS:</span>
+                  <span class="det-val">C++, Python, Java &amp; Web</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Short Bio, Career Highlights & Personal Interests -->
+          <div class="about-content-wrapper">
+            
+            <!-- Bio Card -->
+            <div class="about-bio-card">
+              <h3 class="about-greeting">
+                <i class="fa-solid fa-terminal"></i> Hello World! I'm <span class="highlight-name">Sunil E.</span>
+              </h3>
+              
+              <p class="about-bio-text">
+                I am a motivated and enthusiastic <strong>Bachelor of Engineering (B.E.)</strong> student and aspiring software developer at <strong>Adhichunchanagiri Institute of Technology</strong> (CGPA: 7.8).
+              </p>
+              
+              <p class="about-bio-text">
+                With a solid foundation in <strong>C++, Python, and Java</strong>, I specialize in programming fundamentals, algorithm design, and building functional applications. I am deeply eager to apply technical problem solving to real-world software engineering challenges and contribute effectively to innovative teams.
+              </p>
+
+              <!-- Core Strengths Pills -->
+              <div class="about-strengths-pills">
+                <span class="pixel-pill"><i class="fa-solid fa-bolt"></i> Quick Learner</span>
+                <span class="pixel-pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                <span class="pixel-pill"><i class="fa-solid fa-users"></i> Teamwork</span>
+                <span class="pixel-pill"><i class="fa-solid fa-arrows-spin"></i> Adaptability</span>
+              </div>
+            </div>
+
+            <!-- Career Highlights & Personal Interests Split Grid -->
+            <div class="about-sub-grid">
+              
+              <!-- Career Highlights Card -->
+              <div class="sub-info-card">
+                <div class="sub-card-header">
+                  <i class="fa-solid fa-award card-ico"></i>
+                  <h4 class="sub-card-title">Career Highlights</h4>
+                </div>
+                <ul class="sub-card-list">
+                  <li>
+                    <strong>Smart Monitoring System:</strong> Developed a practical monitoring-focused solution using core software development principles.
+                  </li>
+                  <li>
+                    <strong>Certifications:</strong> Verified certifications from <em>NPTEL</em> and <em>Infosys Springboard</em>.
+                  </li>
+                  <li>
+                    <strong>Academics:</strong> Consistent academic performance with 7.8 CGPA.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Personal Interests & Hobbies Card -->
+              <div class="sub-info-card">
+                <div class="sub-card-header">
+                  <i class="fa-solid fa-heart-pulse card-ico"></i>
+                  <h4 class="sub-card-title">Interests &amp; Hobbies</h4>
+                </div>
+                <ul class="sub-card-list">
+                  <li>
+                    <strong>Kho-Kho Player:</strong> Active sports enthusiast bringing physical agility, rapid strategy, and teamwork from the field into engineering sprints.
+                  </li>
+                  <li>
+                    <strong>Continuous Learning:</strong> Passionate about exploring modern frameworks, software architectures, and automated monitoring tools.
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 3: SKILLS & COMPETENCIES ARSENAL (PIXEL ART STYLE)
+         ======================================================================= -->
+    <section id="skills" class="section skills-section pixel-skills">
+      <div class="container">
+        
+        <!-- Section Header with Retro Tag -->
+        <div class="section-header">
+          <span class="section-tag">&lt;tech-arsenal.exe&gt;</span>
+          <h2 class="section-title">Skills &amp; Competencies</h2>
+          <p class="section-subtitle">Core software engineering competencies, programming languages, frameworks, and developer toolchains with verified proficiency levels.</p>
+        </div>
+
+        <!-- Interactive Skill Category Filter Pills -->
+        <div class="pixel-skill-tabs" role="tablist" aria-label="Skill Categories">
+          <button class="pixel-tab-btn active" data-filter="all" type="button">
+            <i class="fa-solid fa-layer-group"></i> ALL ARSENAL
+          </button>
+          <button class="pixel-tab-btn" data-filter="languages" type="button">
+            <i class="fa-solid fa-code"></i> LANGUAGES
+          </button>
+          <button class="pixel-tab-btn" data-filter="frameworks" type="button">
+            <i class="fa-brands fa-react"></i> WEB &amp; FRAMEWORKS
+          </button>
+          <button class="pixel-tab-btn" data-filter="tools" type="button">
+            <i class="fa-solid fa-screwdriver-wrench"></i> TOOLS &amp; SYSTEMS
+          </button>
+          <button class="pixel-tab-btn" data-filter="cs-core" type="button">
+            <i class="fa-solid fa-brain"></i> CS FUNDAMENTALS
+          </button>
+        </div>
+
+        <!-- Skills Grid: 4 Themed Pixel Category Cards -->
+        <div class="skills-categories-grid">
+          
+          <!-- =================================================================
+               CATEGORY 1: CORE PROGRAMMING LANGUAGES
+               Represents primary languages used for algorithmic solutions and backend logic.
+               ================================================================= -->
+          <div class="skill-category-card pixel-card" data-category="languages">
+            <div class="category-header">
+              <div class="cat-icon-badge icon-cyan">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="cat-title-group">
+                <h3 class="category-title">Programming Languages</h3>
+                <span class="cat-badge-level">LEVEL: EXPERT READY</span>
+              </div>
+            </div>
+
+            <div class="pixel-skills-list">
+              
+              <!-- Skill: C++ (Core OOP & High-performance DSA) -->
+              <div class="skill-item-row" data-skill="cpp">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-c skill-ico ico-cyan"></i> C++ (OOP &amp; DSA)
+                  </span>
+                  <span class="skill-percent-badge">90% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="C++ Proficiency: 90%">
+                  <!-- Animated striped pixel progress bar representing high algorithmic command -->
+                  <div class="skill-pixel-fill fill-cyan" style="--target-width: 90%; width: 90%;"></div>
+                </div>
+                <span class="skill-detail-note">Primary language for data structures, competitive problem solving, and low-level logic.</span>
+              </div>
+
+              <!-- Skill: Python (Scripting, Automation, Data Structures) -->
+              <div class="skill-item-row" data-skill="python">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-python skill-ico ico-yellow"></i> Python 3
+                  </span>
+                  <span class="skill-percent-badge">88% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Python Proficiency: 88%">
+                  <!-- Striped pixel progress bar representing scripting and backend prototyping -->
+                  <div class="skill-pixel-fill fill-yellow" style="--target-width: 88%; width: 88%;"></div>
+                </div>
+                <span class="skill-detail-note">Infosys Springboard certified; utilized for automation scripts, rapid prototyping &amp; logic.</span>
+              </div>
+
+              <!-- Skill: Java (Enterprise OOP & Robust Backend) -->
+              <div class="skill-item-row" data-skill="java">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-java skill-ico ico-rose"></i> Java
+                  </span>
+                  <span class="skill-percent-badge">85% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Java Proficiency: 85%">
+                  <!-- Striped pixel progress bar representing object-oriented design and design patterns -->
+                  <div class="skill-pixel-fill fill-rose" style="--target-width: 85%; width: 85%;"></div>
+                </div>
+                <span class="skill-detail-note">Certified in Java programming; strong grasp of classes, inheritance, polymorphism, and multithreading.</span>
+              </div>
+
+              <!-- Skill: JavaScript (Modern ES6+ Async & DOM) -->
+              <div class="skill-item-row" data-skill="javascript">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-js skill-ico ico-yellow"></i> JavaScript (ES6+)
+                  </span>
+                  <span class="skill-percent-badge">85% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="JavaScript Proficiency: 85%">
+                  <!-- Striped pixel progress bar representing asynchronous programming & browser APIs -->
+                  <div class="skill-pixel-fill fill-amber" style="--target-width: 85%; width: 85%;"></div>
+                </div>
+                <span class="skill-detail-note">Modern ES6+ syntax, Promises, Async/Await, Closures, and dynamic client-side rendering.</span>
+              </div>
+
+              <!-- Skill: SQL (Relational Databases & Data Modelling) -->
+              <div class="skill-item-row" data-skill="sql">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-database skill-ico ico-blue"></i> SQL &amp; Query Design
+                  </span>
+                  <span class="skill-percent-badge">82% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="SQL Proficiency: 82%">
+                  <!-- Striped pixel progress bar representing relational schema design and complex joins -->
+                  <div class="skill-pixel-fill fill-blue" style="--target-width: 82%; width: 82%;"></div>
+                </div>
+                <span class="skill-detail-note">Relational schema design, complex joins, indexing, normalization, and CRUD transaction safety.</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- =================================================================
+               CATEGORY 2: WEB & FRAMEWORKS ECOSYSTEM
+               Represents modern frontend and backend web architecture capabilities.
+               ================================================================= -->
+          <div class="skill-category-card pixel-card" data-category="frameworks">
+            <div class="category-header">
+              <div class="cat-icon-badge icon-purple">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="cat-title-group">
+                <h3 class="category-title">Web &amp; Frameworks</h3>
+                <span class="cat-badge-level">LEVEL: FULL-STACK READY</span>
+              </div>
+            </div>
+
+            <div class="pixel-skills-list">
+              
+              <!-- Skill: HTML5 & Semantic CSS3 -->
+              <div class="skill-item-row" data-skill="html-css">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-html5 skill-ico ico-orange"></i> HTML5 &amp; Modern CSS3
+                  </span>
+                  <span class="skill-percent-badge">92% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="HTML5 & CSS3 Proficiency: 92%">
+                  <!-- Progress bar for pixel-perfect layout and responsive design -->
+                  <div class="skill-pixel-fill fill-orange" style="--target-width: 92%; width: 92%;"></div>
+                </div>
+                <span class="skill-detail-note">Semantic HTML5, CSS Grid/Flexbox, custom CSS animations, and pixel-art styled interfaces.</span>
+              </div>
+
+              <!-- Skill: React.js (Component Architecture) -->
+              <div class="skill-item-row" data-skill="react">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-react skill-ico ico-cyan"></i> React.js
+                  </span>
+                  <span class="skill-percent-badge">80% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="React.js Proficiency: 80%">
+                  <!-- Progress bar representing component state management and hook lifecycle -->
+                  <div class="skill-pixel-fill fill-cyan" style="--target-width: 80%; width: 80%;"></div>
+                </div>
+                <span class="skill-detail-note">Component lifecycle, Custom Hooks, State Management, and interactive Single Page Applications (SPAs).</span>
+              </div>
+
+              <!-- Skill: Node.js & Express Backend -->
+              <div class="skill-item-row" data-skill="nodejs">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-node-js skill-ico ico-green"></i> Node.js &amp; Express
+                  </span>
+                  <span class="skill-percent-badge">78% // LVL 7</span>
+                </div>
+                <div class="skill-pixel-track" title="Node.js Proficiency: 78%">
+                  <!-- Progress bar representing REST endpoint handlers and server architecture -->
+                  <div class="skill-pixel-fill fill-green" style="--target-width: 78%; width: 78%;"></div>
+                </div>
+                <span class="skill-detail-note">REST API routing, middleware integration, JSON serialization, and backend service communication.</span>
+              </div>
+
+              <!-- Skill: Smart Monitoring & IoT Systems -->
+              <div class="skill-item-row" data-skill="monitoring">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-chart-line skill-ico ico-purple"></i> Smart Monitoring Systems
+                  </span>
+                  <span class="skill-percent-badge">85% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Smart Monitoring Proficiency: 85%">
+                  <!-- Progress bar representing telemetry metrics, live dashboarding, and sensor tracking -->
+                  <div class="skill-pixel-fill fill-purple" style="--target-width: 85%; width: 85%;"></div>
+                </div>
+                <span class="skill-detail-note">Hands-on project engineering telemetry feeds, real-time alert thresholds, and dashboard analytics.</span>
+              </div>
+
+              <!-- Skill: Responsive & Adaptive UI Design -->
+              <div class="skill-item-row" data-skill="responsive">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-mobile-screen-button skill-ico ico-cyan"></i> Responsive UI Design
+                  </span>
+                  <span class="skill-percent-badge">90% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="Responsive Design Proficiency: 90%">
+                  <!-- Progress bar representing multi-device adaptability and accessibility -->
+                  <div class="skill-pixel-fill fill-cyan" style="--target-width: 90%; width: 90%;"></div>
+                </div>
+                <span class="skill-detail-note">Mobile-first layouts, media query breakpoints, accessible ARIA roles, and cross-browser testing.</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- =================================================================
+               CATEGORY 3: DEVELOPER TOOLS & PLATFORMS
+               Represents toolchain fluency for agile software development.
+               ================================================================= -->
+          <div class="skill-category-card pixel-card" data-category="tools">
+            <div class="category-header">
+              <div class="cat-icon-badge icon-green">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="cat-title-group">
+                <h3 class="category-title">Tools &amp; Systems</h3>
+                <span class="cat-badge-level">LEVEL: PRODUCTION TOOLKIT</span>
+              </div>
+            </div>
+
+            <div class="pixel-skills-list">
+              
+              <!-- Skill: Git & GitHub (Version Control & Collaboration) -->
+              <div class="skill-item-row" data-skill="git">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-brands fa-git-alt skill-ico ico-orange"></i> Git &amp; GitHub
+                  </span>
+                  <span class="skill-percent-badge">88% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Git & GitHub Proficiency: 88%">
+                  <!-- Progress bar representing branch management, pull requests, and commit discipline -->
+                  <div class="skill-pixel-fill fill-orange" style="--target-width: 88%; width: 88%;"></div>
+                </div>
+                <span class="skill-detail-note">Branching strategies, merge conflict resolution, pull requests, and collaborative repository management.</span>
+              </div>
+
+              <!-- Skill: VS Code & Linux CLI -->
+              <div class="skill-item-row" data-skill="linux-cli">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-terminal skill-ico ico-green"></i> VS Code &amp; Linux CLI
+                  </span>
+                  <span class="skill-percent-badge">86% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Linux & CLI Proficiency: 86%">
+                  <!-- Progress bar representing bash scripting, terminal navigation, and dev extensions -->
+                  <div class="skill-pixel-fill fill-green" style="--target-width: 86%; width: 86%;"></div>
+                </div>
+                <span class="skill-detail-note">Proficient with bash navigation, package managers (npm/pip), and debugging workflows in VS Code.</span>
+              </div>
+
+              <!-- Skill: Relational Database Tools (MySQL / Workbench) -->
+              <div class="skill-item-row" data-skill="mysql">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-server skill-ico ico-blue"></i> MySQL &amp; Database Tools
+                  </span>
+                  <span class="skill-percent-badge">82% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="Database Tools Proficiency: 82%">
+                  <!-- Progress bar representing query profiling, database migrations, and integrity constraints -->
+                  <div class="skill-pixel-fill fill-blue" style="--target-width: 82%; width: 82%;"></div>
+                </div>
+                <span class="skill-detail-note">Table normalization, indexing, database migrations, and SQL query execution tools.</span>
+              </div>
+
+              <!-- Skill: Postman & API Debugging -->
+              <div class="skill-item-row" data-skill="postman">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-paper-plane skill-ico ico-orange"></i> Postman &amp; API Testing
+                  </span>
+                  <span class="skill-percent-badge">80% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="API Testing Proficiency: 80%">
+                  <!-- Progress bar representing HTTP request testing, payloads, and header validations -->
+                  <div class="skill-pixel-fill fill-amber" style="--target-width: 80%; width: 80%;"></div>
+                </div>
+                <span class="skill-detail-note">Testing HTTP endpoints, validating status codes, inspection of JSON payloads, and auth header configs.</span>
+              </div>
+
+              <!-- Skill: NPTEL & Infosys Springboard Tooling -->
+              <div class="skill-item-row" data-skill="cert-tools">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-certificate skill-ico ico-purple"></i> Certified Coursework
+                  </span>
+                  <span class="skill-percent-badge">90% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="Certified Coursework: 90%">
+                  <!-- Progress bar representing formal university and industry certification assessments -->
+                  <div class="skill-pixel-fill fill-purple" style="--target-width: 90%; width: 90%;"></div>
+                </div>
+                <span class="skill-detail-note">Validated skill assessments in Java, C++, Python, and Software Engineering principles.</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- =================================================================
+               CATEGORY 4: CS FUNDAMENTALS & CORE STRENGTHS
+               Represents foundational computer science principles and soft skills.
+               ================================================================= -->
+          <div class="skill-category-card pixel-card" data-category="cs-core">
+            <div class="category-header">
+              <div class="cat-icon-badge icon-amber">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="cat-title-group">
+                <h3 class="category-title">CS Fundamentals</h3>
+                <span class="cat-badge-level">LEVEL: CORE ARCHITECTURE</span>
+              </div>
+            </div>
+
+            <div class="pixel-skills-list">
+              
+              <!-- Skill: Data Structures & Algorithms (DSA) -->
+              <div class="skill-item-row" data-skill="dsa">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-network-wired skill-ico ico-cyan"></i> Data Structures &amp; Algorithms
+                  </span>
+                  <span class="skill-percent-badge">88% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="DSA Proficiency: 88%">
+                  <!-- Striped pixel progress bar representing time/space complexity optimization -->
+                  <div class="skill-pixel-fill fill-cyan" style="--target-width: 88%; width: 88%;"></div>
+                </div>
+                <span class="skill-detail-note">Arrays, Linked Lists, Trees, Graphs, Sorting/Searching, and Big-O asymptotic time/space optimization.</span>
+              </div>
+
+              <!-- Skill: Object-Oriented Programming (OOP) -->
+              <div class="skill-item-row" data-skill="oop">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-cubes-stacked skill-ico ico-purple"></i> OOP &amp; System Design
+                  </span>
+                  <span class="skill-percent-badge">90% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="OOP Proficiency: 90%">
+                  <!-- Striped pixel progress bar representing modular design & encapsulation -->
+                  <div class="skill-pixel-fill fill-purple" style="--target-width: 90%; width: 90%;"></div>
+                </div>
+                <span class="skill-detail-note">Solid foundation in Encapsulation, Abstraction, Polymorphism, Inheritance, and DRY code design principles.</span>
+              </div>
+
+              <!-- Skill: Problem Solving & Debugging -->
+              <div class="skill-item-row" data-skill="problem-solving">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-bug-slash skill-ico ico-green"></i> Problem Solving &amp; Debugging
+                  </span>
+                  <span class="skill-percent-badge">92% // LVL 9</span>
+                </div>
+                <div class="skill-pixel-track" title="Problem Solving Proficiency: 92%">
+                  <!-- Striped pixel progress bar representing root-cause analysis and structured debugging -->
+                  <div class="skill-pixel-fill fill-green" style="--target-width: 92%; width: 92%;"></div>
+                </div>
+                <span class="skill-detail-note">Systematic root cause analysis, stack trace inspection, edge-case handling, and algorithmic troubleshooting.</span>
+              </div>
+
+              <!-- Skill: SDLC & Agile Collaboration -->
+              <div class="skill-item-row" data-skill="sdlc">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-diagram-project skill-ico ico-rose"></i> SDLC &amp; Engineering Ethics
+                  </span>
+                  <span class="skill-percent-badge">85% // LVL 8</span>
+                </div>
+                <div class="skill-pixel-track" title="SDLC Proficiency: 85%">
+                  <!-- Striped pixel progress bar representing software lifecycle discipline -->
+                  <div class="skill-pixel-fill fill-rose" style="--target-width: 85%; width: 85%;"></div>
+                </div>
+                <span class="skill-detail-note">Requirements analysis, architectural planning, code reviews, and structured documentation practices.</span>
+              </div>
+
+              <!-- Skill: Athletic Agility & Team Synergy (Kho-Kho Discipline) -->
+              <div class="skill-item-row" data-skill="teamwork">
+                <div class="skill-info-top">
+                  <span class="skill-name">
+                    <i class="fa-solid fa-bolt-lightning skill-ico ico-yellow"></i> Teamwork &amp; Athletic Agility
+                  </span>
+                  <span class="skill-percent-badge">95% // LVL 10</span>
+                </div>
+                <div class="skill-pixel-track" title="Teamwork & Agility: 95%">
+                  <!-- Striped pixel progress bar representing fast-paced team coordination from Kho-Kho sport -->
+                  <div class="skill-pixel-fill fill-yellow" style="--target-width: 95%; width: 95%;"></div>
+                </div>
+                <span class="skill-detail-note">High adaptability under pressure, rapid tactical execution, and seamless team communication honed through competitive Kho-Kho.</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skills Bottom Callout: Technical Equipment HUD -->
+        <div class="skills-stat-hud pixel-hud-strip">
+          <div class="hud-strip-item">
+            <i class="fa-solid fa-code-commit strip-ico ico-cyan"></i>
+            <div class="strip-text">
+              <span class="strip-label">PRIMARY ARSENAL</span>
+              <strong class="strip-val">C++, PYTHON, JAVA, JS</strong>
+            </div>
+          </div>
+          <div class="hud-strip-item">
+            <i class="fa-solid fa-award strip-ico ico-yellow"></i>
+            <div class="strip-text">
+              <span class="strip-label">CERTIFICATIONS</span>
+              <strong class="strip-val">NPTEL &amp; INFOSYS SPRINGBOARD</strong>
+            </div>
+          </div>
+          <div class="hud-strip-item">
+            <i class="fa-solid fa-microchip strip-ico ico-purple"></i>
+            <div class="strip-text">
+              <span class="strip-label">PROJECT HIGHLIGHT</span>
+              <strong class="strip-val">SMART MONITORING SYSTEM</strong>
+            </div>
+          </div>
+          <div class="hud-strip-item">
+            <i class="fa-solid fa-gamepad strip-ico ico-green"></i>
+            <div class="strip-text">
+              <span class="strip-label">ATHLETIC DISCIPLINE</span>
+              <strong class="strip-val">KHO-KHO SPORTS AGILITY</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 4: TIMELINE (EDUCATION, PROJECTS & CAREER MILESTONES)
+         ======================================================================= -->
+    <section id="timeline" class="section timeline-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;career-milestones.log&gt;</span>
+          <h2 class="section-title">Education &amp; Experience</h2>
+          <p class="section-subtitle">A chronological record of academic excellence, major engineering projects, industry certifications, and key leadership milestones.</p>
+        </div>
+
+        <!-- Milestone Category Filter Buttons -->
+        <div class="timeline-filter-pills" role="tablist" aria-label="Timeline Milestone Filters">
+          <button class="t-filter-btn active" data-tfilter="all" type="button">
+            <i class="fa-solid fa-list-check"></i> ALL MILESTONES
+          </button>
+          <button class="t-filter-btn" data-tfilter="education" type="button">
+            <i class="fa-solid fa-graduation-cap"></i> EDUCATION
+          </button>
+          <button class="t-filter-btn" data-tfilter="project" type="button">
+            <i class="fa-solid fa-code-fork"></i> MAJOR PROJECTS
+          </button>
+          <button class="t-filter-btn" data-tfilter="certification" type="button">
+            <i class="fa-solid fa-certificate"></i> CERTIFICATIONS
+          </button>
+          <button class="t-filter-btn" data-tfilter="leadership" type="button">
+            <i class="fa-solid fa-medal"></i> SPORTS &amp; AGILITY
+          </button>
+        </div>
+
+        <!-- Vertical Interactive Timeline Track -->
+        <div class="timeline-container">
+
+          <!-- Milestone 1: B.E. Computer Science Degree (Education) -->
+          <article class="timeline-item" data-milestone="education">
+            <div class="timeline-marker marker-cyan">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card-wrapper">
+              <div class="timeline-content rounded-card">
+                <div class="card-header-row">
+                  <span class="timeline-date-badge date-cyan">
+                    <i class="fa-regular fa-calendar"></i> 2024 – PRESENT (2ND YEAR)
+                  </span>
+                  <span class="timeline-type-pill pill-cyan">ACADEMICS</span>
+                </div>
+                <h3 class="timeline-role">Bachelor of Engineering (B.E.) in Computer Science</h3>
+                <h4 class="timeline-org">
+                  <i class="fa-solid fa-building-columns"></i> Adhichunchanagiri Institute of Technology (AIT)
+                </h4>
+                <p class="timeline-desc">
+                  Pursuing Computer Science and Engineering with a focus on core computer science disciplines. Maintaining a solid academic standing with strong performance across algorithmic foundations, system design, and database architectures.
+                </p>
+                <div class="timeline-highlights">
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>CGPA: 7.8</strong> — Consistent semester-on-semester academic achievement.</div>
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Core Studies:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming (C++/Java), DBMS, Computer Networks.</div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag tag-cyan">B.E. CSE</span>
+                  <span class="tag">CGPA 7.8</span>
+                  <span class="tag">C++ &amp; Java</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 2: Smart Monitoring System (Major Engineering Project) -->
+          <article class="timeline-item" data-milestone="project">
+            <div class="timeline-marker marker-purple">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="timeline-card-wrapper">
+              <div class="timeline-content rounded-card">
+                <div class="card-header-row">
+                  <span class="timeline-date-badge date-purple">
+                    <i class="fa-regular fa-calendar"></i> 2024
+                  </span>
+                  <span class="timeline-type-pill pill-purple">MAJOR PROJECT</span>
+                </div>
+                <h3 class="timeline-role">Lead Developer — Smart Monitoring System</h3>
+                <h4 class="timeline-org">
+                  <i class="fa-solid fa-diagram-project"></i> Engineering Capstone &amp; Telemetry Project
+                </h4>
+                <p class="timeline-desc">
+                  Designed and implemented a comprehensive real-time smart monitoring system engineered to capture telemetry signals, monitor sensor metrics, process stream alerts, and present visual health diagnostics on a centralized dashboard.
+                </p>
+                <div class="timeline-highlights">
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Automated Alerts:</strong> Built custom threshold logic for proactive anomaly detection and fault warnings.</div>
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Data Pipeline:</strong> Integrated backend storage and data visualization charts for real-time tracking.</div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag tag-purple">Smart Monitoring</span>
+                  <span class="tag">IoT &amp; Telemetry</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Analytics</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 3: Professional Certifications (NPTEL & Infosys Springboard) -->
+          <article class="timeline-item" data-milestone="certification">
+            <div class="timeline-marker marker-yellow">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="timeline-card-wrapper">
+              <div class="timeline-content rounded-card">
+                <div class="card-header-row">
+                  <span class="timeline-date-badge date-yellow">
+                    <i class="fa-regular fa-calendar"></i> 2023 – 2024
+                  </span>
+                  <span class="timeline-type-pill pill-yellow">CERTIFICATIONS</span>
+                </div>
+                <h3 class="timeline-role">NPTEL &amp; Infosys Springboard Certified</h3>
+                <h4 class="timeline-org">
+                  <i class="fa-solid fa-award"></i> National Programme on Technology Enhanced Learning &amp; Infosys
+                </h4>
+                <p class="timeline-desc">
+                  Completed rigorous competitive programming and object-oriented software engineering training from premier academic and industry organizations.
+                </p>
+                <div class="timeline-highlights">
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>NPTEL Coursework:</strong> Validated foundational computer science and technical competencies.</div>
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Infosys Springboard:</strong> Completed specialized certificates in Java Programming, C++, Python, and Software Design.</div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag tag-yellow">NPTEL</span>
+                  <span class="tag tag-yellow">Infosys Springboard</span>
+                  <span class="tag">Java Certified</span>
+                  <span class="tag">Python &amp; C++</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 4: Sports & Leadership (Kho-Kho Discipline) -->
+          <article class="timeline-item" data-milestone="leadership">
+            <div class="timeline-marker marker-green">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <div class="timeline-card-wrapper">
+              <div class="timeline-content rounded-card">
+                <div class="card-header-row">
+                  <span class="timeline-date-badge date-green">
+                    <i class="fa-regular fa-calendar"></i> ONGOING
+                  </span>
+                  <span class="timeline-type-pill pill-green">ATHLETIC LEADERSHIP</span>
+                </div>
+                <h3 class="timeline-role">Kho-Kho Player &amp; Team Contender</h3>
+                <h4 class="timeline-org">
+                  <i class="fa-solid fa-people-group"></i> Collegiate &amp; Regional Sports Tournaments
+                </h4>
+                <p class="timeline-desc">
+                  Competitive traditional Indian sport requiring split-second decision-making, physical agility, stamina, and seamless tactical coordination.
+                </p>
+                <div class="timeline-highlights">
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Agility &amp; Strategy:</strong> Cultivated rapid adaptability under intense game-day pressures and time constraints.</div>
+                  <div class="highlight-item"><i class="fa-solid fa-check"></i> <strong>Team Synergy:</strong> Translates team communication, synchronization, and disciplined grit directly into agile software sprint teams.</div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag tag-green">Kho-Kho Athlete</span>
+                  <span class="tag">Team Strategy</span>
+                  <span class="tag">Agile Mindset</span>
+                  <span class="tag">High Stamina</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 5: PROJECTS SECTION
+         ======================================================================= -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;portfolio&gt;</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications and engineering projects built to solve practical problems.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+          <button class="filter-btn" data-filter="python">Python / Core</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-banner">
+              <div class="project-icon-wrapper"><i class="fa-solid fa-bag-shopping"></i></div>
+              <span class="project-badge">Full Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce Web Application</h3>
+              <p class="project-description">
+                A full-featured shopping platform with product search, filtering, user authentication, shopping cart management, and checkout integration.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-card-banner">
+              <div class="project-icon-wrapper"><i class="fa-solid fa-list-check"></i></div>
+              <span class="project-badge">Frontend</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Task &amp; Kanban Manager</h3>
+              <p class="project-description">
+                Interactive productivity board featuring drag-and-drop task workflow, category tags, priority indicators, local storage persistence, and dark mode.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">JavaScript (ES6+)</span>
+                <span class="tech-badge">HTML5 Drag &amp; Drop</span>
+                <span class="tech-badge">CSS Grid</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="python">
+            <div class="project-card-banner">
+              <div class="project-icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+              <span class="project-badge">Python / API</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Live Weather &amp; Analytics Dashboard</h3>
+              <p class="project-description">
+                Weather tracking dashboard consuming OpenWeather API with geolocation support, 7-day predictive forecasting, temperature trend charts, and responsive UI.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python / Flask</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 5b: YOUTUBE VIDEO HIGHLIGHT (PORTFOLIO INTRO) — Step 8
+         Responsive YouTube embed using CSS aspect-ratio technique.
+         Replace the src URL with your actual YouTube video embed link.
+         ======================================================================= -->
+    <section id="video" class="section video-section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">&lt;portfolio-reel.mp4&gt;</span>
+          <h2 class="section-title">Portfolio Reel</h2>
+          <p class="section-subtitle">A curated walkthrough of my featured projects, coding workflow, and key technical achievements as a software engineering graduate.</p>
+        </div>
+
+        <!-- Pixel Art Framed Responsive YouTube Embed -->
+        <div class="video-wrapper">
+          <div class="pixel-video-frame">
+
+            <!-- Fake OS Title Bar for Pixel Art Aesthetic -->
+            <div class="pixel-video-topbar">
+              <div class="video-dots">
+                <span class="vdot vdot-red"></span>
+                <span class="vdot vdot-yellow"></span>
+                <span class="vdot vdot-green"></span>
+              </div>
+              <span class="video-title-bar">SUNIL_PORTFOLIO_REEL.MP4 // PLAYING</span>
+              <span class="video-live-badge">&#9654; LIVE</span>
+            </div>
+
+            <!-- Responsive 16:9 YouTube Embed Container
+                 Uses aspect-ratio: 16/9 to maintain proportions on all screen sizes.
+                 NOTE: Replace the YouTube video ID below with Sunil's actual video.
+                 Format: https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0 -->
+            <div class="video-embed-container">
+              <iframe
+                id="portfolio-video"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&color=white"
+                title="Sunil E. - Software Engineering Portfolio Showcase"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <!-- Caption explaining the video content -->
+            <div class="pixel-video-caption">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Portfolio showcase demonstrating engineering projects, development workflow, and technical problem-solving in action.</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Video Stats HUD Strip -->
+        <div class="video-stats-row">
+          <div class="video-stat-item">
+            <i class="fa-solid fa-code ico-cyan"></i>
+            <div>
+              <span class="vstat-label">TECH STACK SHOWN</span>
+              <strong class="vstat-val">React · Node.js · Python</strong>
+            </div>
+          </div>
+          <div class="video-stat-item">
+            <i class="fa-solid fa-clock ico-yellow"></i>
+            <div>
+              <span class="vstat-label">VIDEO DURATION</span>
+              <strong class="vstat-val">~3 MIN HIGHLIGHT REEL</strong>
+            </div>
+          </div>
+          <div class="video-stat-item">
+            <i class="fa-solid fa-star ico-purple"></i>
+            <div>
+              <span class="vstat-label">FEATURED DEMOS</span>
+              <strong class="vstat-val">3 LIVE PROJECTS</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 6: TESTIMONIALS SECTION (PIXEL ART RECOMMENDATIONS)
+         ======================================================================= -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;peer-reviews&gt;</span>
+          <h2 class="section-title">Testimonials &amp; Feedback</h2>
+          <p class="section-subtitle">What mentors, professors, and project teammates say about collaborating with me.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-pixel-card">
+            <div class="testimonial-header">
+              <span class="star-rating">★★★★★</span>
+              <span class="testimonial-tag">[MENTOR]</span>
+            </div>
+            <p class="testimonial-quote">
+              "Sunil displayed exceptional quickness in understanding full-stack concepts during project implementations. His drive to write clean, maintainable code sets him apart."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <div>
+                <h4 class="author-name">Senior Project Lead</h4>
+                <p class="author-role">Tech Mentor &amp; Consultant</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-pixel-card">
+            <div class="testimonial-header">
+              <span class="star-rating">★★★★★</span>
+              <span class="testimonial-tag">[PROFESSOR]</span>
+            </div>
+            <p class="testimonial-quote">
+              "A diligent student with strong analytical skills in Data Structures and Algorithms. Consistently demonstrated disciplined problem-solving and teamwork in our capstone sprints."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h4 class="author-name">Department Professor</h4>
+                <p class="author-role">Computer Science &amp; Engineering</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-pixel-card">
+            <div class="testimonial-header">
+              <span class="star-rating">★★★★★</span>
+              <span class="testimonial-tag">[PEER]</span>
+            </div>
+            <p class="testimonial-quote">
+              "Working with Sunil on our hackathon and semester projects was seamless. He takes ownership of frontend and backend integration effortlessly and debugs under pressure."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h4 class="author-name">Engineering Peer</h4>
+                <p class="author-role">Full Stack Collaborator</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 7: INTERACTIVE CHAT TERMINAL (PIXEL ART AI ASSISTANT)
+         ======================================================================= -->
+    <section id="chat" class="section chat-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;interactive-chat&gt;</span>
+          <h2 class="section-title">Sunil.EXE Terminal Chat</h2>
+          <p class="section-subtitle">Chat with my automated AI avatar to explore my skills, projects, or leave an instant message.</p>
+        </div>
+
+        <div class="terminal-chat-wrapper">
+          <div class="terminal-chat-window">
+            <div class="terminal-topbar">
+              <div class="terminal-lights">
+                <span class="t-btn btn-red"></span>
+                <span class="t-btn btn-yellow"></span>
+                <span class="t-btn btn-green"></span>
+              </div>
+              <span class="terminal-prompt-title">SUNIL_AI_BOT://PORT_8080 (READY)</span>
+              <span class="terminal-status-tag">ONLINE</span>
+            </div>
+
+            <div class="terminal-messages" id="chat-messages" role="log" aria-live="polite">
+              <div class="chat-msg bot-msg">
+                <span class="msg-sender">[BOT]:</span>
+                <span class="msg-content">Hello, Visitor! I am Sunil's interactive assistant. Ask me about: <code>skills</code>, <code>projects</code>, <code>education</code>, <code>contact</code>, or type any question!</span>
+              </div>
+            </div>
+
+            <!-- Quick Suggestion Pills -->
+            <div class="chat-quick-replies">
+              <button class="quick-chip" data-query="skills">⚡ Skills</button>
+              <button class="quick-chip" data-query="projects">🚀 Projects</button>
+              <button class="quick-chip" data-query="education">🎓 Education</button>
+              <button class="quick-chip" data-query="hire">💼 Hire Sunil</button>
+            </div>
+
+            <!-- Chat Input Bar -->
+            <form id="chat-form" class="chat-input-bar">
+              <span class="chat-input-prefix">&gt;</span>
+              <input type="text" id="chat-input" class="chat-input-field" placeholder="Type a command or message..." autocomplete="off" aria-label="Type a message to Sunil Bot" />
+              <button type="submit" class="chat-send-btn pixel-btn-sm" aria-label="Send Message">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 8: CONTACT SECTION
+         ======================================================================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">&lt;get-in-touch&gt;</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Have an opening for a fresh graduate or want to collaborate on an interesting project? Let's talk!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Card -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Let's build something amazing together</h3>
+            <p class="contact-info-text">
+              I am actively looking for software engineering roles (Full-time, Junior, or Internships). Feel free to reach out directly via email, phone, or LinkedIn.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="item-label">Email</span>
+                  <a href="mailto:sunile732k8@gmail.com" class="item-value">sunile732k8@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="item-label">Phone</span>
+                  <a href="tel:+917349172129" class="item-value">+91 7349172129</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="item-label">Location</span>
+                  <span class="item-value">Bengaluru / Karnataka, India (Open to Relocation &amp; Remote)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-pills">
+              <a href="https://www.linkedin.com/in/sunil-e-65388839" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <i class="fa-solid fa-code"></i> LeetCode
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Recruiter / Hiring Manager" required />
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. recruiter@company.com" required />
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Job Opportunity / Project Inquiry" required />
+                <span class="error-msg" id="subject-error">Please enter a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Hello Sunil, we have an exciting Software Engineer opportunity for you..." required></textarea>
+                <span class="error-msg" id="message-error">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+              
+              <div id="form-toast" class="form-toast" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER SECTION (PIXEL ART STYLE WITH SOCIAL ICONS)
+       ========================================================================= -->
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <!-- Footer Top Row -->
+      <div class="footer-top">
+
+        <!-- Brand & Tagline -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo pixel-logo" aria-label="Sunil Portfolio - Home">
+            <span class="pixel-bracket">&lt;</span><span class="pixel-brand-name">SUNIL</span><span class="pixel-slash">/</span><span class="pixel-bracket">&gt;</span>
+          </a>
+          <p class="footer-tagline">Crafting modern, clean &amp; performant web experiences. Ready to deploy.</p>
+          <!-- Pixel Art Online Status -->
+          <div class="footer-status-badge">
+            <span class="footer-status-dot"></span>
+            <span class="footer-status-text">STATUS: OPEN TO HIRE</span>
+          </div>
+        </div>
+
+        <!-- Quick Nav Links -->
+        <div class="footer-nav">
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> About Me</a></li>
+            <li><a href="#skills" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+            <li><a href="#timeline" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Timeline</a></li>
+            <li><a href="#projects" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons (Pixel Art Style) -->
+        <div class="footer-social">
+          <h4 class="footer-col-title">CONNECT</h4>
+          <p class="footer-social-desc">Find me on the digital battlefield:</p>
+          <div class="footer-social-icons">
+            <!-- GitHub Icon with aria-label for accessibility -->
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-icon icon-github"
+              aria-label="Visit Sunil's GitHub profile"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span class="icon-tooltip">GitHub</span>
+            </a>
+
+            <!-- LinkedIn Icon -->
+            <a
+              href="https://www.linkedin.com/in/sunil-e-65388839"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-icon icon-linkedin"
+              aria-label="Visit Sunil's LinkedIn profile"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span class="icon-tooltip">LinkedIn</span>
+            </a>
+
+            <!-- Email Icon -->
+            <a
+              href="mailto:sunile732k8@gmail.com"
+              class="footer-social-icon icon-email"
+              aria-label="Send an email to Sunil"
+              title="Email Sunil"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              <span class="icon-tooltip">Email</span>
+            </a>
+
+            <!-- LeetCode Icon -->
+            <a
+              href="https://leetcode.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-icon icon-leetcode"
+              aria-label="Visit Sunil's LeetCode profile"
+              title="LeetCode"
+            >
+              <i class="fa-solid fa-code"></i>
+              <span class="icon-tooltip">LeetCode</span>
+            </a>
+
+            <!-- Phone / WhatsApp Icon -->
+            <a
+              href="tel:+917349172129"
+              class="footer-social-icon icon-phone"
+              aria-label="Call Sunil at +91 7349172129"
+              title="Phone"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span class="icon-tooltip">+91 7349172129</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom Row -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year"></span> &lt;SUNIL/&gt; · Built with semantic HTML5, vanilla CSS3 &amp; JavaScript · No frameworks, pure craft.
+        </p>
+        <a href="#hero" class="back-to-top pixel-back-top" aria-label="Scroll back to top of page" title="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
